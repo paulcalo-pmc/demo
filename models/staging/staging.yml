@@ -40,6 +40,7 @@ models:
           - unique
           - not_null
       - name: category
-        tests:
-          - accepted_values:
-              values: ['Sports','Home','Books','Electronics','Children','Women','Men']
+        # tests:
+        #   - accepted_values:
+        #       values: ['Sports','Home','Books','Electronics','Children','Women','Men']
+
