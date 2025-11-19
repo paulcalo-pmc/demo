@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: tpch
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+    tables:
+      - name: ORDERS
+      - name: CUSTOMER
+      - name: LINEITEM
+      - name: NATION
+      - name: REGION
+      - name: PART
+      - name: SUPPLIER
+
+  - name: tpcds
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCDS_SF10TCL
+    tables:
+      - name: STORE_SALES
+      - name: DATE_DIM
+      - name: CUSTOMER
+      - name: ITEM
+      - name: STORE
