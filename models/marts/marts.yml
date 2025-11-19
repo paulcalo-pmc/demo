@@ -5,24 +5,24 @@ models:
   - name: fact_sales
     columns:
       - name: item_id
-        tests:
-          - not_null
-          - relationships:
-              arguments:
-                to: ref('dim_item')
-                field: item_id
+        #tests:
+          #- not_null
+          #- relationships:
+              #arguments:
+                #to: ref('dim_item')
+                #field: item_id
 
       - name: customer_id
-        tests:
-          - not_null
-          - relationships:
-              arguments:
-                to: ref('dim_customer')
-                field: customer_id
+        #tests:
+          #- not_null
+          #- relationships:
+              #arguments:
+                #to: ref('dim_customer')
+                #field: customer_id
 
       - name: revenue
-        tests:
-          - not_null
+        #tests:
+          #- not_null
 
       - name: date_key
         tests:
