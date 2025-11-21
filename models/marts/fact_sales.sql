@@ -46,7 +46,7 @@ select
     s.sales_price,
     s.quantity * s.sales_price as revenue,
 
-    -- NEW FIELD USING THE MACRO
+    -- NEW FIELD USING THE MACRO --More Notes
     {{ calc_revenue('s.quantity', 's.sales_price') }} as revenue_from_macro,
 
     i.category
