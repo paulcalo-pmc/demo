@@ -3,6 +3,13 @@ version: 2
 models:
 
   - name: fact_sales
+    description: >
+      This model produces an item-level sales fact table filtered to the first
+      month in which any store sales occurred. It joins the staged store sales
+      data with the item dimension to enrich each transaction with item category
+      information. Revenue is calculated directly and again using a macro to
+      demonstrate reusable business logic in dbt.
+
     columns:
       - name: item_id
         #tests:
@@ -27,3 +34,4 @@ models:
       - name: date_key
         tests:
           - not_null
+
