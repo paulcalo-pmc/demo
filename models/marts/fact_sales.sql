@@ -45,6 +45,10 @@ select
     s.quantity,
     s.sales_price,
     s.quantity * s.sales_price as revenue,
+
+    -- NEW FIELD USING THE MACRO
+    {{ calc_revenue('s.quantity', 's.sales_price') }} as revenue_from_macro,
+
     i.category
 from sales s
 left join items i
