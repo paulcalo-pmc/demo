@@ -16,7 +16,7 @@ models:
           #- not_null
           #- relationships:
               #arguments:
-                #to: ref('dim_item')
+                #to: ref('dim_item') --
                 #field: item_id
 
       - name: customer_id
